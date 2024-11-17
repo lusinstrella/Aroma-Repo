@@ -1,0 +1,298 @@
+/* this style keeps the Gulp logo from taking over the whole page. Adjust if needed to size correctly for your page. */
+
+:root {
+    --bcgrd-color: #eee9e6;
+    --text-color: #1e485f;
+    --accent-color: #4c6d58;
+    --button-colorb: #a88c54;
+    --footer-color: #f3e8e8;
+    --button-color: #fefcfb;
+    --hover-color: #c87766;
+    --title-font: "Cormorant Garamond", serif, system-ui;
+    --main-font: "Raleway", sans-serif, system-ui;
+  }
+  
+  body {
+    background-color: var(--bcgrd-color);
+    background-image: url(https://i.ibb.co/fYdKNt6/Background-coffee.png);
+    background-size: cover;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    margin-left: 2rem;
+    max-width: 150px;
+    padding: 1rem;
+  }
+  
+  .border-secondary {
+    background-color: var(--accent-color) !important;
+    border: 1px solid var(--button-color) !important;
+    color: var(--button-color) !important;
+  }
+  
+  header {
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-style: bold;
+  }
+  
+  .nav-item {
+    font-size: 2rem;
+  }
+  
+  .nav-link {
+    color: var(--button-color) !important;
+    margin-left: 2rem;
+    padding: 1%;
+  }
+  
+  .nav-link:hover {
+    border-bottom: 1px solid var(--hover-color);
+  }
+  
+  .navbar {
+    background-color: var(--accent-color) !important;
+  
+    font-family: var(--title-font) !important;
+  }
+  
+  .offcanvas-body {
+    background-color: var(--accent-color);
+  }
+  
+  .active {
+    border-bottom: 1px solid var(--hover-color);
+  }
+  
+  form {
+    display: flex;
+    margin-right: 1rem;
+    padding: 1%;
+  }
+  
+  input {
+    margin-top: 1.5rem;
+    height: 2.4rem;
+  }
+  
+  .btn-outline-success {
+    font-family: var(--main-font);
+    font-size: 1.2rem !important;
+    padding: 2% 6%;
+  }
+  
+  p {
+    grid-area: par;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin: 4%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  article {
+    align-items: center;
+    border: 1px solid var(--button-colorb);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 20% 20%;
+    grid-template-areas:
+      "img title"
+      "img par"
+      ". btn";
+    margin-bottom: 10%;
+    margin: 10%;
+    width: 50vw;
+  }
+  
+  .card-img-top {
+    grid-area: img;
+    padding:3%;
+  }
+  
+  h4 {
+    font-family: var(--main-font);
+    font-size: 28px !important;
+    font-weight: 600;
+  }
+  
+  h5 {
+    grid-area: title;
+    font-family: var(--title-font);
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: 4%;
+  }
+  
+  .btn {
+    grid-area: btn;
+    background-color: var(--button-colorb) !important;
+    border: none !important;
+    color: var(--button-color) !important;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 500 !important;
+    margin-left: 4%;
+    margin-top: 8%;
+    
+  }
+  
+  .btn:hover {
+    border: 2px solid var(--hover-color) !important;
+  }
+  
+  .border-top {
+    background-color: var(--footer-color) !important;
+    border-top: 2px solid #a88c54 !important;
+    color: var(--text-color) !important;
+  }
+  
+  #container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .steam {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #a88c54;
+    margin-top: -75px;
+  
+    z-index: 0;
+    opacity: 0;
+  }
+  
+  footer:hover #steam1 {
+    -webkit-animation: steam1 4s ease-out infinite;
+    animation: steam1 4s ease-out infinite;
+  }
+  
+  footer:hover #steam3 {
+    -webkit-animation: steam1 4s ease-out 1s infinite;
+    animation: steam1 4s ease-out 1s infinite;
+  }
+  
+  @-webkit-keyframes steam1 {
+    0% {
+      transform: translateY(0) translateX(0) scale(0.25);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(-200px) translateX(-20px) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes steam1 {
+    0% {
+      transform: translateY(0) translateX(0) scale(0.25);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(-200px) translateX(-20px) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  footer:hover #steam2 {
+    -webkit-animation: steam2 4s ease-out 0.5s infinite;
+    animation: steam2 4s ease-out 0.5s infinite;
+  }
+  
+  footer:hover #steam4 {
+    -webkit-animation: steam2 4s ease-out 1.5s infinite;
+    animation: steam2 4s ease-out 1.5s infinite;
+  }
+  
+  @-webkit-keyframes steam2 {
+    0% {
+      transform: translateY(0) translateX(0) scale(0.25);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(-200px) translateX(20px) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes steam2 {
+    0% {
+      transform: translateY(0) translateX(0) scale(0.25);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(-200px) translateX(20px) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  #cup-body {
+    border: 1px solid #a88c54;
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    border-radius: 0 0 150px 150px;
+    background-color: #fff;
+    margin: auto;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #cup-shade {
+    position: relative;
+    height: 150px;
+    width: 100px;
+    background-color: #f3f3f3;
+    display: inline-block;
+    margin-left: 42%;
+    margin-top: -3px;
+    transform: rotate(50deg);
+    z-index: 1;
+  }
+  
+  #cup-handle {
+    position: relative;
+    height: 38px;
+    width: 40px;
+    border-radius: 0 150px 150px 0;
+    border: 10px solid var(--button-colorb);
+    margin-bottom: 95px;
+    margin-left: 130px;
+    display: inline-block;
+    z-index: 0;
+  }
+  
+  #saucer {
+    border: 1px solid var(--button-colorb);
+    height: 15px;
+    width: 150px;
+    border-radius: 0 0 100px 100px;
+    background-color: #f9f9f9;
+    margin-top: -45px;
+    margin-right: 1%;
+    z-index: 2;
+  }
+  
+  @media (max-width: 1000px) {
+    article {
+     display: flex;
+      flex-direction: column;
+      width: 80vw;
+    }
+    .btn {
+      margin-left:0;
+      width: 100%;
+    }
+  }
+  
