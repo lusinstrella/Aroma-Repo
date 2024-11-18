@@ -21,8 +21,8 @@ body {
 .logo {
     border-radius: 50%;
     margin-left: 2rem;
-    max-width: 150px;
-    padding: 1rem;
+    max-width: 200px;
+    
 }
 
 .border-secondary {
@@ -300,8 +300,8 @@ footer:hover #steam4 {
     .logo {
         border-radius: 50%;
         margin-left: 0rem;
-        max-width: 120px;
-        padding: 1.5rem;
+        max-width: 150px;
+     
     }
 
     main {

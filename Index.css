@@ -19,10 +19,9 @@
   }
   
   .logo {
-    border-radius: 50%;
     margin-left: 2rem;
-    max-width: 150px;
-    padding: 1rem;
+    max-width: 200px;
+    
   }
   
   .border-secondary {
@@ -331,6 +330,11 @@
   @media (max-width: 1000px) {
     h1 {
       font-size: 3rem !important;
+    }
+
+    .logo {
+      max-width: 150px;
+      margin-left: 0rem;
     }
   }
   
