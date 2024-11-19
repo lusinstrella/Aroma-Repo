@@ -145,7 +145,7 @@ h5 {
     font-weight: 500 !important;
     margin-left: 4%;
     margin-right: 2rem;
-    margin-top: 20%;
+    margin-top: 30%;
     
 
 }
@@ -313,7 +313,7 @@ footer:hover #steam4 {
     article {
         display: flex;
         flex-direction: column;
-        height: 120dvh;
+        height: 125dvh;
         width: 80vw;
     }
 
